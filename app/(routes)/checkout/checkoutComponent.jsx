@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import { getCookie } from 'cookies-next';
 import GlobaApi from '../../_utils/GlobaApi';
 import Image from 'next/image';
-import { useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -17,12 +17,13 @@ export default function App() {
 
   const [cartItems, setCartItems] = useState([])
   const query = useSearchParams()
-  const amount = query.get('amount')
-
+  const router = useRouter()
   const user = getCookie('user')? JSON.parse(getCookie('user')): null;
   const jwt = getCookie('jwt')
+  const amount = query.get('amount')
 
-
+ 
+  
   useEffect(()=>{
     if (user){
       async function getCartItems(){
@@ -33,7 +34,7 @@ export default function App() {
   }
   }, [])
 
-
+  if (!jwt) return router.replace('/')
   return (
     <div>
       <h2 className='bg-primary text-white text-center font-bold text-2xl py-6 my-4'>Checkout</h2>   

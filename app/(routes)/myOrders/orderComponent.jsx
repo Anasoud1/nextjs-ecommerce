@@ -16,7 +16,7 @@ function MyOrders() {
 
     useEffect(()=> {
         if(!jwt){
-            router.replace('/')
+            return router.replace('/')
         }
         getOrder();
     }, [])
