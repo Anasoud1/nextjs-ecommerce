@@ -1,4 +1,5 @@
 import App from "./checkoutComponent";
+import { Suspense } from 'react';
 
 export const metadata = {
   title: "Checkout",
@@ -7,8 +8,8 @@ export const metadata = {
 export default function Page() {
 
   return (
-   <>
-    <App/>
-   </>
+   <Suspense>
+      <App/>
+   </Suspense>
   );
 };
