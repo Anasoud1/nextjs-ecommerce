@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is an eCommerce website for a grocery store built using **Next.js**, **Tailwind CSS**, and **Strapi**. The application allows users to browse categories such as fruits and vegetables, add items to their shopping cart, and proceed to checkout. Payments are handled via **Stripe**. The project also includes user authentication with JWT and order management.
+This is an ecommerce website for a grocery store built using **Next.js**, **Tailwind CSS**, and **Strapi**. The application allows users to browse categories such as fruits and vegetables, add items to their shopping cart, and proceed to checkout. Payments are handled via **Stripe**. The project also includes user authentication with JWT and order management.
 
 ## Features
 
