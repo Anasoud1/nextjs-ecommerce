@@ -27,8 +27,8 @@ This is an eCommerce website for a grocery store built using **Next.js**, **Tail
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/your-repository.git
-    cd your-repository
+    git clone https://github.com/Anasoud1/nextjs-ecommerce.git
+    cd nextjs-ecommerce
     ```
 
 2. Install dependencies:
