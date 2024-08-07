@@ -96,10 +96,6 @@ function Header() {
                     ))}
                 </DropdownMenuContent>
               </DropdownMenu>
-            <div className='md:flex items-center gap-2 border rounded-full p-2 px-5 hidden'>
-              <Search/>
-              <input type="text" placeholder='Search' className='outline-none'/>
-            </div>
         </div>
         <div className='flex items-center gap-3'>
             <CartList itemList={itemList} totalItem={totalItem}/>
