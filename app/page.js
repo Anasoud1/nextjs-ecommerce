@@ -13,13 +13,13 @@ export default async function Home() {
   const productList = await GlobaApi.getProducts();
 
   return (
-    <main className="px-20">
+    <main className="px-14 sm:px-20">
       <Slides/>
       <CategoryList/>
       <ProductList productList={productList}/>
       <Image src={'/bannerDelivery.png'} alt='banner'
-      width={1000} height={400}
-      className="w-full h-[400px] object-contain mb-10"/>
+      width={1000} height={200}
+      className="w-full object-contain mb-10"/>
       <Footer/>
     </main>
   );

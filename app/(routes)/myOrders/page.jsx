@@ -8,7 +8,7 @@ function MyOrderPage() {
 
   return (
     <>
-        <MyOrders/>
+      <MyOrders/>
     </>
   )
 }

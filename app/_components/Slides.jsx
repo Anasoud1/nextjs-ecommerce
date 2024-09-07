@@ -15,7 +15,7 @@ async function Slides() {
                     <CarouselItem key={index}>
                         <Image src={item?.attributes?.image?.data[0]?.attributes?.url}
                         alt='banner' width={2000} height={2000}
-                        className='w-full sm:h-[200px] md:h-[400px] object-fill rounded-2xl'/>
+                        className='w-full h-[200px] md:h-[400px] object-fill rounded-2xl'/>
                     </CarouselItem>
                 ))}
                 

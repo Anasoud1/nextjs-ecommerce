@@ -50,7 +50,7 @@ function ProductList({productList}) {
               <div className='py-4 px-6 border rounded-lg flex flex-col justify-center items-center gap-4 hover:scale-105 hover:shadow-lg transition-all ease-in-out cursor-pointer' key={index}>
                   <Image src={item?.attributes?.image?.data[0]?.attributes?.url}
                   alt={item?.attributes?.name} width={200} height={200}
-                  className='w-[200px] h-[200px] object-contain'/>
+                  className='w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] object-contain'/>
                   <h2 className='text-center font-bold text-lg'>{item?.attributes?.name}</h2>
                   <div className='flex gap-3'>
                       {item.attributes.sellingPrice &&<h2 className='text-center font-bold text-lg'>${item.attributes.sellingPrice}</h2>}

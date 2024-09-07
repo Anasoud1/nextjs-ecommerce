@@ -72,9 +72,9 @@ function Header() {
   }
 
   return (
-    <div className='flex items-center gap-8 px-20 py-4 shadow-md justify-between'>
+    <div className='flex items-center sm:gap-8  px-2 sm:px-20 py-4 shadow-md justify-between'>
         <div className='flex items-center gap-8'>
-            <h1 className='text-2xl font-black'><Link href={'/'}>GStore</Link></h1>
+            <h1 className='text-lg sm:text-2xl font-black'><Link href={'/'}>GStore</Link></h1>
            
               <DropdownMenu>
                 <DropdownMenuTrigger>
@@ -106,7 +106,7 @@ function Header() {
           {isLogin && (
             <DropdownMenu>
             <DropdownMenuTrigger>
-              <CircleUserRound className='bg-green-100 p-1 rounded-full text-primary h-10 w-10 cursor-pointer'/>
+              <CircleUserRound className='bg-green-100 p-1 rounded-full text-primary h-8 w-8 sm:h-10 sm:w-10 cursor-pointer'/>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuLabel>{user.email}</DropdownMenuLabel>

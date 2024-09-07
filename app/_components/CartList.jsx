@@ -73,10 +73,10 @@ useEffect(()=>{
               <div className='flex flex-col gap-4 mt-3 mb-20 h-[500px] overflow-auto'>
                   {itemList.map((item, index)=> (
                     <li key={index} className='list-none flex items-center justify-between'>
-                      <div className='flex gap-3 items-center'>
+                      <div className='flex gap-3 '>
                         <Image className='border p-2 rounded-lg' src={item.image? item?.image: ''}
                             width={80} height={80} alt={item.name}/>
-                            <div>
+                            <div className='flex flex-col items-start'>
                                 <h2 className='font-bold text-sm'>{item.name}</h2>
                                 <h2>{item.quantity}</h2>
                                 <h2 className='font-bold text-sm'>{item.amount}</h2>

@@ -39,7 +39,7 @@ export default function App() {
     <div>
       <h2 className='bg-primary text-white text-center font-bold text-2xl py-6 my-4'>Checkout</h2>   
       <div className='grid md:grid-cols-2 grid-cols-1 gap-20 px-10 py-8'>
-        <div className='flex flex-col gap-4 p-4 h-[500px] overflow-auto border'>
+        <div className='flex flex-col gap-4 p-4  overflow-auto border'>
             {cartItems.map((item, index)=> (
               <li key={index} className='list-none flex items-center justify-between'>
                 <div className='flex gap-6 items-center'>

@@ -36,23 +36,23 @@ function MyOrders() {
             <div>
                 {orderList.map((order, index) => (
                     <Collapsible key={index}>
-                        <CollapsibleTrigger className='flex justify-between mt-4 lg:w-[70%] w-[100%] border p-2 bg-slate-100'>
+                        <CollapsibleTrigger className='flex justify-between mt-4 lg:w-[70%] w-[100%] border p-2 bg-slate-100 text-xs sm:text-base'>
                           <h2> <span className='font-bold mr-2'>Order Date: </span>{moment(order?.createdAt).format('DD/MMMM/YYYY, h:mm:ss a')}</h2>
                           <h2> <span className='font-bold mr-2'>Total Amount: </span>${order.totalAmount}</h2>
                         </CollapsibleTrigger>
                         <CollapsibleContent>
                             {order.orderItemList.map((item, idx) =>(
                                 <li key={idx} className='list-none'>
-                                    <div className='grid grid-cols-4 gap-x-32 lg:w-[70%] w-[100%] mt-3 p-2'>
+                                    <div className='grid grid-cols-4 lg:gap-x-24 lg:w-[70%] w-[100%] mt-3 p-2'>
                                     
                                     <Image src={item?.product?.data[0]?.attributes?.image?.data[0]?.attributes?.url? item?.product?.data[0]?.attributes?.image?.data[0]?.attributes?.url: ''}
-                                        width={100} height={100} alt={item.name} className='max-w-[300px]'/>
+                                        width={100} height={100} alt={item.name} className='w-[100px] sm:max-w-[300px]'/>
                                         <div>
-                                            <h2 className='font-bold text-sm'>{item?.product?.data[0]?.attributes?.name}</h2>
-                                            <h2 className='font-bold text-sm'>Item Price: ${item?.product?.data[0]?.attributes?.sellingPrice ? item?.product?.data[0]?.attributes?.sellingPrice: item?.product?.data[0]?.attributes?.mrp}</h2>
+                                            <h2 className='font-bold text-xs sm:text-sm'>{item?.product?.data[0]?.attributes?.name}</h2>
+                                            <h2 className='font-bold text-xs sm:text-sm'>Item Price: ${item?.product?.data[0]?.attributes?.sellingPrice ? item?.product?.data[0]?.attributes?.sellingPrice: item?.product?.data[0]?.attributes?.mrp}</h2>
                                         </div>
-                                        <h2><span className='font-bold mr-2'>Quantity: </span>{item.quantity}</h2>
-                                        <h2><span className='font-bold mr-2'>Price: </span>${item.amount}</h2>
+                                        <h2 className='text-xs'><span className='font-bold mr-2'>Quantity: </span>{item.quantity}</h2>
+                                        <h2 className='text-xs'><span className='font-bold mr-2'>Price: </span>${item.amount}</h2>
                                     </div>
                                     <hr className='md:w-4/6 sm:w-4/6 '/>
                               </li>
