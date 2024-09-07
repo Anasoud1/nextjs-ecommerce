@@ -78,8 +78,8 @@ useEffect(()=>{
                             width={80} height={80} alt={item.name}/>
                             <div className='flex flex-col items-start'>
                                 <h2 className='font-bold text-sm'>{item.name}</h2>
-                                <h2>{item.quantity}</h2>
-                                <h2 className='font-bold text-sm'>{item.amount}</h2>
+                                <h2 className='text-sm'>Quantity: {item.quantity}</h2>
+                                <h2 className='font-bold text-sm'>${item.amount}</h2>
                             </div>
                       </div>
                         <TrashIcon className='cursor-pointer mx-2' onClick={() => {deleteItemFromCart(item.id)}}/>
