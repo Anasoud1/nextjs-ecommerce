@@ -17,9 +17,10 @@ export default async function Home() {
       <Slides/>
       <CategoryList/>
       <ProductList productList={productList}/>
-      <Image src={'/bannerDelivery.png'} alt='banner'
-      width={1000} height={200}
-      className="w-full object-contain mb-10"/>
+      
+      {/* <Image src={'/delivery.png'} alt='banner'
+        width={1000} height={100}
+        className="w-full object-contain mb-10"/> */}
       <Footer/>
     </main>
   );

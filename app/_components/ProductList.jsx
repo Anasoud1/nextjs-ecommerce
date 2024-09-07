@@ -44,7 +44,7 @@ function ProductList({productList}) {
 
   return (
     <section className='py-12 '>
-      <h2 className='text-green-600 font-bold text-2xl mb-8'>Our Popular Products</h2>
+      <h2 className='font-bold text-2xl mb-8'>Our Popular Products</h2>
       <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6'>
           {productList.map((item, index) => (
               <div className='py-4 px-6 border rounded-lg flex flex-col justify-center items-center gap-4 hover:scale-105 hover:shadow-lg transition-all ease-in-out cursor-pointer' key={index}>

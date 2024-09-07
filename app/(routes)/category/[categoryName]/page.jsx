@@ -17,9 +17,9 @@ async function CategoryName({params}) {
       <div className='px-20'>
         <CategoryList currentCategory={name}/>
         <ProductList productList={productListByCategory} />
-        <Image src={'/bannerDelivery.png'} alt='banner'
+        {/* <Image src={'/bannerDelivery.png'} alt='banner'
         width={1000} height={400}
-        className="w-full h-[400px] object-contain mb-10"/>
+        className="w-full h-[400px] object-contain mb-10"/> */}
         <Footer/>
       </div>
     </main>

@@ -74,7 +74,7 @@ function Header() {
   return (
     <div className='flex items-center sm:gap-8  px-2 sm:px-20 py-4 shadow-md justify-between'>
         <div className='flex items-center gap-8'>
-            <h1 className='text-lg sm:text-2xl font-black'><Link href={'/'}>GStore</Link></h1>
+            <h1 className='text-lg sm:text-2xl font-black'><Link href={'/'}>eStore</Link></h1>
            
               <DropdownMenu>
                 <DropdownMenuTrigger>

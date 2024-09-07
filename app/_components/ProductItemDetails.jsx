@@ -59,7 +59,7 @@ function ProductItemDetails({item, cartItems, updateLength, setUpdateLength}) {
     <div className='overflow-auto grid grid-cols-1 md:grid-cols-2 p-7 gap-4'>
         <Image src={item?.attributes?.image?.data[0]?.attributes?.url}
         alt={item?.attributes?.name} width={300} height={300}
-        className='bg-slate-100 w-[300px] h-full rounded-lg object-contain'/>
+        className=' w-[300px] h-full rounded-lg object-contain'/>
         <div className='flex flex-col gap-4 items-baseline'>
             <h1 className='font-bold text-2xl'>{item?.attributes?.name}</h1>
             <h1 className='text-sm text-gray-500'>{item?.attributes?.description}</h1>
@@ -68,7 +68,7 @@ function ProductItemDetails({item, cartItems, updateLength, setUpdateLength}) {
                     {item.attributes.sellingPrice && <h2 className='line-through text-center font-bold text-lg text-gray-500'>${item.attributes.mrp}</h2>}
                     {!item.attributes.sellingPrice &&<h2 className='text-center font-bold text-lg'>${item.attributes.mrp}</h2>}
                 </div>
-            <h2 className='font-medium text-lg'>Quantity ({item.attributes.itemQuantityType})</h2>
+            {/* <h2 className='font-medium text-lg'>Quantity ({item.attributes.itemQuantityType})</h2> */}
             <div className='flex items-center gap-4'>
                 <div className='flex border gap-10 items-center p-2'>
                     <button onClick={removeQuantity}>-</button>
