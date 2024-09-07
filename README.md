@@ -1,12 +1,12 @@
-# GStore eCommerce Project
+# eStore eCommerce Project
 
 ## Overview
 
-This is an ecommerce website for a grocery store built using **Next.js**, **Tailwind CSS**, and **Strapi**. The application allows users to browse categories such as fruits and vegetables, add items to their shopping cart, and proceed to checkout. Payments are handled via **Stripe**. The project also includes user authentication with JWT and order management.
+This is an ecommerce website built using **Next.js**, **Tailwind CSS**, and **Strapi**. The application allows users to browse categories such as electronics and accessories, add items to their shopping cart, and proceed to checkout. Payments are handled via **Stripe**. The project also includes user authentication with JWT and order management.
 
 ## Features
 
-- **Category Browsing**: Users can explore various product categories like fruits, vegetables and more.
+- **Category Browsing**: Users can explore various product categories like electronics and accessories and more.
 - **Shopping Cart**: Add items to the shopping cart and view them before checkout.
 - **Checkout and Payment**: Complete purchases using Stripe's test account for payment processing.
 - **Order Management**: View orders on the `myOrder` page after a successful payment.
