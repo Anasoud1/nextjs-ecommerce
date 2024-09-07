@@ -11,7 +11,6 @@ function Footer() {
             <Image src={'/instagram.png'} alt='instagram' width={20} height={20}/>
             <Image src={'/twitter.png'} alt='twitter' width={20} height={20}/>
             <Image src={'/linkedin.png'} alt='linkedin' width={20} height={20}/>
-            <Image src={'/github.png'} alt='github' width={20} height={20}/>
         </div>
     </div>
   )
