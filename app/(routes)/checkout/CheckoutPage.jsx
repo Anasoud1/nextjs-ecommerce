@@ -98,7 +98,7 @@ function CheckoutPage({amount, cartItems}) {
       elements,
       clientSecret,
       confirmParams: {
-        return_url: `https://nextjs-ecommerce-gstore.vercel.app/payment-success?amount=${amount}`
+        return_url: `https://nextjs-ecommerce-estore.vercel.app/payment-success?amount=${amount}`
       }
     });
   
