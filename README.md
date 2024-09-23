@@ -68,7 +68,7 @@ This is an ecommerce website built using **Next.js**, **Tailwind CSS**, and **St
 
 ## Deployment
 
-The application is deployed and available at [https://nextjs-ecommerce-gstore.vercel.app](https://nextjs-ecommerce-gstore.vercel.app).
+The application is deployed and available at [https://nextjs-ecommerce-gstore.vercel.app](https://nextjs-ecommerce-estore.vercel.app).
 
 ## License
 
