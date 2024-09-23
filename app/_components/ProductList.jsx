@@ -46,8 +46,8 @@ function ProductList({productList}) {
     <section className='py-12 '>
       <h2 className='font-bold text-2xl mb-8'>Our Popular Products</h2>
       <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6'>
-          {productList.map((item, index) => (
-              <div className='py-4 px-6 border rounded-lg flex flex-col justify-center items-center gap-4 hover:scale-105 hover:shadow-lg transition-all ease-in-out cursor-pointer' key={index}>
+          {productList.map((item) => (
+              <div className='py-4 px-6 border rounded-lg flex flex-col justify-center items-center gap-4 hover:scale-105 hover:shadow-lg transition-all ease-in-out cursor-pointer' key={item.id}>
                   <Image src={item?.attributes?.image?.data[0]?.attributes?.url}
                   alt={item?.attributes?.name} width={200} height={200}
                   className='w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] object-contain'/>
@@ -62,7 +62,7 @@ function ProductList({productList}) {
                     <DialogTrigger asChild>
                       <Button disabled={cartItems? cartItems.some(obj => obj.name === item.attributes.name): null} variant="outline" className='text-primary hover:text-white hover:bg-green-700'>Add to cart</Button>
                     </DialogTrigger>
-                    <DialogContent className="overflow-y-scroll max-h-screen">
+                    <DialogContent key={item.id} className="overflow-y-scroll max-h-screen">
                       <DialogTitle></DialogTitle>
                       <DialogDescription></DialogDescription>
                       <ProductItemDetails item={item} cartItems={cartItems} updateLength={updateLength} setUpdateLength={setUpdateLength}/>
